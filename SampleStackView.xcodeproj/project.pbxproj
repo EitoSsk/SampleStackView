@@ -14,6 +14,7 @@
 		4E57A7EA22C6434E002B4FA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E57A7E822C6434E002B4FA1 /* LaunchScreen.storyboard */; };
 		4E57A7F522C6434E002B4FA1 /* SampleStackViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E57A7F422C6434E002B4FA1 /* SampleStackViewTests.swift */; };
 		4E57A80022C6434E002B4FA1 /* SampleStackViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E57A7FF22C6434E002B4FA1 /* SampleStackViewUITests.swift */; };
+		4EA29DD322C7028800229877 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA29DD222C7028800229877 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4E57A7FB22C6434E002B4FA1 /* SampleStackViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleStackViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E57A7FF22C6434E002B4FA1 /* SampleStackViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleStackViewUITests.swift; sourceTree = "<group>"; };
 		4E57A80122C6434E002B4FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EA29DD222C7028800229877 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				4E57A7E622C6434E002B4FA1 /* Assets.xcassets */,
 				4E57A7E822C6434E002B4FA1 /* LaunchScreen.storyboard */,
 				4E57A7EB22C6434E002B4FA1 /* Info.plist */,
+				4EA29DD222C7028800229877 /* CustomButton.swift */,
 			);
 			path = SampleStackView;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				4E57A7E222C6434D002B4FA1 /* ViewController.swift in Sources */,
 				4E57A7E022C6434D002B4FA1 /* AppDelegate.swift in Sources */,
+				4EA29DD322C7028800229877 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

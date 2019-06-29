@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZaM-e5-Zy7" userLabel="Header View">
                                 <rect key="frame" x="0.0" y="20" width="320" height="48"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="へっだぁ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dvi-uL-PbT">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SampleStackView" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dvi-uL-PbT">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -38,31 +38,31 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dtt-iC-HQ2" userLabel="Separater View">
-                                <rect key="frame" x="0.0" y="68" width="320" height="0.5"/>
+                                <rect key="frame" x="0.0" y="68" width="315" height="0.5"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="0.5" id="Yll-tw-GMG"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xRO-4f-avD" userLabel="Button Stack View">
-                                <rect key="frame" x="0.0" y="471" width="320" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xRO-4f-avD" userLabel="Button Stack View">
+                                <rect key="frame" x="5" y="471" width="310" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFu-Zv-oLl">
-                                        <rect key="frame" x="0.0" y="0.0" width="116" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFu-Zv-oLl" customClass="CustomButton" customModule="SampleStackView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="105" height="30"/>
                                         <state key="normal" title="Leading"/>
                                         <connections>
                                             <action selector="alignLeading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mro-oj-Bob"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFt-TX-9kh">
-                                        <rect key="frame" x="116" y="0.0" width="98.5" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFt-TX-9kh" customClass="CustomButton" customModule="SampleStackView" customModuleProvider="target">
+                                        <rect key="frame" x="110" y="0.0" width="90" height="30"/>
                                         <state key="normal" title="Center"/>
                                         <connections>
                                             <action selector="alignCenter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O42-rt-7du"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVn-XH-x55">
-                                        <rect key="frame" x="214.5" y="0.0" width="105.5" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVn-XH-x55" customClass="CustomButton" customModule="SampleStackView" customModuleProvider="target">
+                                        <rect key="frame" x="205" y="0.0" width="105" height="30"/>
                                         <state key="normal" title="Trailing"/>
                                         <connections>
                                             <action selector="alignTrailing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sXx-S9-gJc"/>
@@ -97,6 +97,13 @@
                                     </switch>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dmh-SG-86y" userLabel="Stack View Background">
+                                <rect key="frame" x="0.0" y="88.5" width="320" height="250"/>
+                                <color key="backgroundColor" red="0.84612949297461715" green="0.96584780283377203" blue="0.93932931691827903" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="mxo-zo-R3E"/>
+                                </constraints>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="BnI-Ku-sUV">
                                 <rect key="frame" x="0.0" y="88.5" width="320" height="250"/>
                                 <subviews>
@@ -134,16 +141,19 @@
                             <constraint firstItem="Dtt-iC-HQ2" firstAttribute="top" secondItem="ZaM-e5-Zy7" secondAttribute="bottom" id="Fmp-gI-HqX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rDN-xA-ALZ" secondAttribute="bottom" constant="16" id="JQt-sV-1k5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BnI-Ku-sUV" secondAttribute="trailing" id="KSK-S9-R1b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dmh-SG-86y" secondAttribute="trailing" id="Qg5-P6-aO1"/>
+                            <constraint firstItem="Dmh-SG-86y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TDd-8Q-VNc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rDN-xA-ALZ" secondAttribute="trailing" constant="20" id="Xeu-r0-U8o"/>
-                            <constraint firstItem="xRO-4f-avD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZLC-qw-Z75"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xRO-4f-avD" secondAttribute="trailing" id="bar-mV-c60"/>
+                            <constraint firstItem="xRO-4f-avD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="ZLC-qw-Z75"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xRO-4f-avD" secondAttribute="trailing" constant="5" id="bar-mV-c60"/>
                             <constraint firstItem="rDN-xA-ALZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="c5k-5y-0EO"/>
                             <constraint firstItem="ZaM-e5-Zy7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dyZ-U3-zz4"/>
                             <constraint firstItem="ZaM-e5-Zy7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fXq-qL-Be4"/>
-                            <constraint firstAttribute="trailing" secondItem="Dtt-iC-HQ2" secondAttribute="trailing" id="h1m-q7-au2"/>
+                            <constraint firstAttribute="trailing" secondItem="Dtt-iC-HQ2" secondAttribute="trailing" constant="5" id="h1m-q7-au2"/>
                             <constraint firstItem="BnI-Ku-sUV" firstAttribute="top" secondItem="Dtt-iC-HQ2" secondAttribute="bottom" constant="20" id="i7n-8m-9dQ"/>
                             <constraint firstItem="Dtt-iC-HQ2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rH6-lF-C6F"/>
                             <constraint firstItem="ZaM-e5-Zy7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ryR-Us-kkJ"/>
+                            <constraint firstItem="Dmh-SG-86y" firstAttribute="top" secondItem="Dtt-iC-HQ2" secondAttribute="bottom" constant="20" id="sFg-UU-EJE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
